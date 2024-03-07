@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/GSAP/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            .navelement {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="w-full h-full bg-black text-white overflow-x-hidden">
+    <nav id="navbar"
+        class=" h-20 w-full flex items-center justify-between px-4 border-b-2 border-[#6A6A6A] sticky top-0 bg-black z-50">
+        <div class="flex gap-28 items-center nav">
+            <h1 class="font-semibold text-3xl uppercase">coucher</h1>
+            <div class="flex gap-3 uppercase text-[#C3C3C3] navelement">
+                <h1>services</h1>
+                <h1>about us</h1>
+                <h1>cases</h1>
+            </div>
+        </div>
+
+        <div class="flex text-[#C3C3C3] items-center navelement gap-3">
+            <h1>sing up</h1>
+            <button class="ring-1 ring-white rounded-full p-1"><svg class="" xmlns="http://www.w3.org/2000/svg"
+                    width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                    <path d="M18 6h2v12h-2zm-8 5H4v2h6v5l6-6-6-6z"></path>
+                </svg></button>
+        </div>
+        <div class="md:hidden cursor-pointer nav">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    style="fill: rgba(255, 255, 255, 1);">
+                    <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+                </svg>
+            </h1>
+        </div>
+    </nav>
+
+    <div class="page1 h-full mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full h-full">
+            <div id="herotext" class="left  md:h-full w-full font-semibold md:text-8xl text-5xl uppercase py-10 px-5">
+                <h1>Unlimited</h1>
+                <h2>pretentious</h2>
+                <h3 class="flex items-center"><span class="flex items-center">
+                        <div class=" flex items-center">
+                            <img class="md:w-16 md:h-16 w-10 h-10 object-cover rounded-full ring-4 ring-black"
+                                src="https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <img class="md:w-16 md:h-16 w-10 h-10 object-cover object-top rounded-full -translate-x-2 ring-4 ring-black"
+                                src="https://images.unsplash.com/photo-1469460340997-2f854421e72f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <img class="md:w-16 md:h-16 w-10 h-10 object-cover rounded-full -translate-x-4 ring-4 ring-black object-top"
+                                src="https://images.unsplash.com/photo-1541182388496-ac92a3230e4c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                    </span>ideas</h3>
+                <div
+                    class="border-t-2 border-[#6A6A6A] mt-14 text-[#ADADAD] text-base md:text-lg flex items-start justify-between heroborder">
+                    <h4 class="md:mt-5 mt-2">our solutions</h4>
+                    <h4 class="md:mt-5 mt-2">we provide the full <br> funnel approach</h4>
+                </div>
+            </div>
+            <div class="right  h-full w-full flex justify-center px-5">
+                <div class=" rounded-2xl relative overflow-hidden md:my-10 mb-5">
+
+                    <div
+                        class="absolute top-0 right-0 w-20 h-10 bg-black rounded-bl-2xl rounded-tr-2xl flex items-center justify-center gap-1 z-10">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                        <div class="w-2 h-2 border-white border-[1px] rounded-full"></div>
+                    </div>
+                    <div class="absolute top-6 left-6 uppercase text-lg text-black font-medium z-10">
+                        <h1>Your</h1>
+                        <h1>Business</h1>
+                        <h1>boost</h1>
+                    </div>
+
+                    <div class="absolute bottom-6 w-full px-6 h-14 z-10">
+                        <div
+                            class="border-black border-[1.5px] w-full h-14 rounded-full flex items-center justify-between ">
+
+                            <form action="">
+                                <input
+                                    class="bg-transparent w-full h-14 mx-auto px-6 rounded-full overflow-hidden font-medium text-black outline-none placeholder-black placeholder:font-medium"
+                                    type="text" placeholder="Book Demo Call">
+                            </form>
+
+                            <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="44px" height="44px"
+                                viewBox="0 0 24 24" style="fill:black;">
+                                <path
+                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 15v-4H7v-2h5V7l5 5-5 5z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <img class="rounded-2xl object-cover scale-110 -z-10"
+                        src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page2">
+        <div class="w-screen h-auto md:h-[calc(100vh-80px)] bg-black">
+            <div class="grid md:grid-cols-4 grid-cols-1 w-full h-full">
+                <div class=" flex items-center justify-center md:mb-0 mb-5 boxs">
+                    <div class="bg-black p-5 box">
+                        <div class="flex items-center gap-3 ">
+                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
+                                    style="fill: black">
+                                    <path d="M7 6v12l10-6z"></path>
+                                </svg>
+                            </div>
+                            <div class="capitalizes text-[#ADADAD] font-medium">
+                                <p>let's see</p>
+                                <p>how we did it</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start mt-16 gap-3 text-[#ADADAD]">
+                            <button
+                                class="bg-transparent p-2 border-2 border-[#6A6A6A] rounded-full uppercase font-medium">web
+                                analytics</button>
+                            <button
+                                class="bg-transparent p-2 border-2 border-[#6A6A6A] rounded-full uppercase font-medium">email
+                                marketing</button>
+                            <button
+                                class="bg-transparent p-2 border-2 border-[#6A6A6A] rounded-full uppercase font-medium">seo
+                                2.0</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-col items-center justify-center md:mb-0 mb-5 boxs">
+                    <div class="bg-[#FD5E09] relative w-52 h-52 p-5 flex flex-col justify-between rounded-2xl box">
+                        <div class="w-16 h-8 bg-[#FD5E09] absolute top-0 right-0 -translate-y-2 rounded-2xl"></div>
+                        <div class="text-black font-medium text-lg">
+                            <h1>unique</h1>
+                            <h1>business solutions</h1>
+                        </div>
+                        <div>
+                            <img width="44px" src="https://i.postimg.cc/MpzCL40y/pngfind-com-three-dots-png-5179066.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-col items-center justify-center md:mb-0 mb-5 boxs">
+                    <div class="bg-[#E0E0E0] relative w-52 h-52 p-5 flex flex-col justify-between rounded-2xl box">
+                        <div class="w-16 h-8 bg-[#E0E0E0] absolute top-0 right-0 -translate-y-2 rounded-2xl"></div>
+                        <div class="absolute top-0 left-0 w-auto h-6 flex items-center justify-center gap-1 pl-3 pt-3">
+                            <div class="bg-black w-2 h-2 rounded-full"></div>
+                            <div class="border-[1px] border-black w-2 h-2 rounded-full"></div>
+                        </div>
+                        <div class="flex items-end justify-end w-full mt-1">
+                            <img width="34px" src="https://i.postimg.cc/PJcKbSbv/arrow-top-right-1024x1024-1.png"
+                                alt="">
+                        </div>
+                        <div class="text-black font-medium text-3xl">
+                            <h1>our case</h1>
+                            <h1>studies</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" flex flex-col items-center justify-center md:mb-0 mb-5 boxs">
+                    <div class="bg-[#FDC959] relative w-52 h-52 p-5 flex flex-col justify-between rounded-2xl box">
+                        <div class="w-16 h-8 bg-[#FDC959] absolute top-0 right-0 -translate-y-2 rounded-2xl"></div>
+                        <div class="text-black font-medium text-lg">
+                            <h1>unique</h1>
+                            <h1>business solutions</h1>
+                        </div>
+                        <div>
+                            <img width="44px" src="https://i.postimg.cc/MpzCL40y/pngfind-com-three-dots-png-5179066.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
